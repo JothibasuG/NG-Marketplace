@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Magento_Checkout::css/custom.css"/>
+        <css src="Magento_Checkout::css/font-awesome.min.css"/>
+        <css src="Magento_Checkout::css/bootstrap.min.css"/>
+        <css src="Magento_Checkout::css/fontawesome-webfont.woff2"/>
+    </head>
+    <body>
+        <referenceBlock name="checkout.success" template="Magento_Checkout::checkout/success.phtml"/>
+    </body>
+</page>

@@ -1,0 +1,172 @@
+
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+?>
+<?php /** @var $block \Magento\Checkout\Block\Onepage\Success */ ?>
+<div class="checkout-success">
+<a href="http://localhost/magento242/sales/order/print/order_id/7/" class="action print" target="_blank" rel="noopener">
+        <span>Print Order</span>
+    </a>
+<p> helllo world</p>
+
+    <?php if ($block->getOrderId()) :?>
+        <?php if ($block->getCanViewOrder()) :?>
+            <p><?= $block->escapeHtml(__('Your order number is: %1.', sprintf('<a href="%s" class="order-number"><strong>%s</strong></a>', $block->escapeUrl($block->getViewOrderUrl()), $block->getOrderId())), ['a', 'strong']) ?></p>
+        <?php  else :?>
+            <p><?= $block->escapeHtml(__('Your order # is: <span>%1</span>.', $block->getOrderId()), ['span']) ?></p>
+        <?php endif;?>
+            <p><?= $block->escapeHtml(__('We\'ll email you an order confirmation with details and tracking info.')) ?></p>
+    <?php endif;?>
+
+    <?= $block->getAdditionalInfoHtml() ?>
+
+    <div class="actions-toolbar">
+        <div class="primary">
+            <a class="action primary continue" href="<?= $block->escapeUrl($block->getContinueUrl()) ?>"><span><?= $block->escapeHtml(__('Continue Shopping')) ?></span></a>
+        </div>
+    </div>
+</div>
+
+<!--  ================  Content part start here ================ -->
+
+<div class="content-wrapper">
+<!-- checkout success part start here   -->
+<section class="checkout-success-wrapper">
+	<div class="container">
+
+        <div class="success-checkout-box">
+        
+         <div class="suc-logo-block"> <img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/order-su-trns.png') ?>' border="0" alt=""> </div>
+            <div class="row">
+            	<div class="col-md-5 su-left-block"> 
+                
+                	<div class="dw-inv">
+                    
+                    <div class="n-suc font-24 black-color font-wg500"> ₦1,700 <span> <img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/noun-special-offer-3636425.png') ?>'
+                      border="0" alt=""> </span></div>
+                    <div class="font-13 txt-color-b-7 b-su"> Your purchase was successful </div>
+                    
+                    <div class="font-13 txt-color-b-7 b-date mt-4"> Sep 04, 2020 | 12:15 PM </div>
+                    <div class="font-13 txt-color-b-7 b-tns mt-2"> Transaction Id : <strong>MTN00012345</strong> </div>
+                    
+                    <div class="dn-btn-ins  mt-5"> <a href="#" class="ye-btn"> Download invoice </a> </div>
+                    
+                    <div class="order-banner"> <a href="#"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/order-su-banner.jpg') ?>' border="0" alt=""></a> </div>
+                    
+                    <div class="order-suc-social">
+                    
+                    <ul>
+                      <li> <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i> </a> </li>
+                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a> </li>
+                <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
+                <li> <a href="#"> <i class="fa fa-google-plus" aria-hidden="true"></i> </a> </li>
+              
+                 <li> <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+            
+                </ul>
+                    
+                    </div>
+                    
+                    
+                    </div>
+                
+                
+                </div>
+                <div class="col-md-7 order-sum-block">
+               
+                	 <div class="order-sum">
+                     	<div class="hd-ord-sum font-15 black-color font-wg500">Order summary </div>
+                        <div class="ord-list font-13 txt-color-b-7">
+                        	<div class="ord-list-left">Order #102993 </div>
+                            <div class="ord-list-right"> </div>
+                        
+                        </div>
+                        
+                        <div class="ord-list font-13 txt-color-b-7">
+                        	<div class="ord-list-left">Delivery: Online </div>
+                            <div class="ord-list-right"> </div>
+                        
+                        </div>
+                        
+                        <div class="ord-list font-13 txt-color-b-7 pt-2">
+                        	<div class="ord-list-left">Purchase for: </div>
+                            <div class="ord-list-right"> 0845 6795 6020 </div>
+                        
+                        </div>
+                        
+                        
+                        <div class="ord-list font-13 black-color font-wg500 pt-2">
+                        	<div class="ord-list-left">BizPlus Basic  </div>
+                            <div class="ord-list-right"> ₦1,643 </div>
+                        
+                        </div>
+                        
+                        <div class="ord-list font-13 black-color font-wg500">
+                        	<div class="ord-list-left">Data + Business Tips </div>
+                            <div class="ord-list-right">  </div>
+                        
+                        </div>
+                        
+                        <div class="bd-gp"> </div>
+                        
+                        <div class="ord-list font-13 black-color font-wg500">
+                        	<div class="ord-list-left">Billing summary </div>
+                            <div class="ord-list-right">  </div>
+                        
+                        </div>
+                        
+                        <div class="ord-list font-13 txt-color-b-7 pt-2">
+                        	<div class="ord-list-left">Bundle total </div>
+                            <div class="ord-list-right"> ₦1,560 </div>
+                        
+                        </div>
+                        
+                        <div class="ord-list font-13 txt-color-b-7 pt-1">
+                        	<div class="ord-list-left">Tax </div>
+                            <div class="ord-list-right"> ₦15 </div>
+                        
+                        </div>
+                        
+                        <div class="ord-list font-13 txt-color-b-7 pt-1">
+                        	<div class="ord-list-left">Coupon discount </div>
+                            <div class="ord-list-right"> ₦68 </div>
+                        
+                        </div>
+                        
+                        
+                        <div class="ord-list font-13 txt-color-b-7 pt-1">
+                        	<div class="ord-list-left">Shipping </div>
+                            <div class="ord-list-right">Free </div>
+                        
+                        </div>
+                        
+                        
+                        <div class="ord-list font-13 black-color total-bd font-wg500">
+                        	<div class="ord-list-left">Total </div>
+                            <div class="ord-list-right">  ₦1,700 </div>
+                        
+                        </div>
+                        
+                        <div class="suc-txt-b font-15 text-center"> How was your share BizPlus experience? </div>
+                        <div class="ord-suc-block text-center mt-4 mb-4"> <img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/group-word-suc.png') ?>'  border="0" alt=""> </div>
+                        <div class="suc-txt-help font-13 text-center txt-color-b-7"> Need help? </div>
+                        
+                     </div>
+                </div>
+            
+            </div>
+        </div>
+</div>
+
+
+</section>
+
+<!-- checkout success part end here   -->
+
+
+</div>
+
