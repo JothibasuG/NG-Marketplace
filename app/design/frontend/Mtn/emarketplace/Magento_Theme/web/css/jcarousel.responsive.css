@@ -1,0 +1,144 @@
+.jcarousel-wrapper { position: relative; margin:0 auto; width:100%;}
+
+/** Carousel **/
+
+
+.jcarousel { position: relative;  overflow: hidden;  width: 100%; margin:0 auto;}
+
+.jcarousel ul {  width: 20000em;   position: relative;   list-style: none;   margin: 0;   padding: 0; margin-left:-10%;}
+
+.jcarousel li {  float: left;   }
+
+
+.jcarousel img { display: block; max-width: 100%;  height: auto !important;}
+
+
+
+
+.jcarousel2 { position: relative;  overflow: hidden;  width: 100%;}
+
+.jcarousel2 ul { /* width: 20000em;*/   position: relative;   list-style: none;   margin: 0;   padding: 0;}
+
+.jcarousel2 li {  float: left;   }
+
+
+.jcarousel2 img { display: block; max-width: 100%;  height: auto !important;}
+/** Carousel Controls **/
+.jcarousel-control-prev, .jcarousel-control-next { position: absolute;  top: 50%;  margin-top: -15px; width: 64px; height: 64px;
+    text-align: center; background: #4E443C; color: #fff;     border-radius: 50%;}
+	
+.jcarousel-control-prev, .jcarousel-control-next { font-size:40px; background: transparent;    border: none;}	
+.jcarousel-control-prev, .jcarousel-control-next i{ color:#fff;}
+
+.jcarousel-control-prev {     left: 0px;}
+.jcarousel-control-next {     right: 0px}
+
+/*  =============== */
+
+/** Carousel **/
+
+
+/** Carousel Controls **/
+.jcarousel2-control-prev, .jcarousel2-control-next { position: absolute;  top: 50%;  margin-top: -15px; width: 64px; height: 64px;
+    text-align: center; background: #4E443C; color: #fff;     border-radius: 50%;}
+	
+.jcarousel2-control-prev, .jcarousel2-control-next { font-size:40px; background: transparent;    border: none;}	
+.jcarousel2-control-prev, .jcarousel2-control-next i{ color:#999999;}
+
+.jcarousel2-control-prev {     left: 0px;}
+.jcarousel2-control-next {     right: 0px}
+
+.jcarousel2-control-next i { padding-right:0px;}
+
+/* ===========   jcarousel3 start  ===========  */
+
+
+
+.jcarousel3 { position: relative;  overflow: hidden;  width: 100%;}
+
+.jcarousel3 ul {  width: 20000em;   position: relative;   list-style: none;   margin: 0;   padding: 0; }
+
+.jcarousel3 li {  float: left; }
+
+.jcarousel3 img { display: block; max-width: 100%;  height: auto !important;}
+
+.jcarousel3-control-prev, .jcarousel3-control-next { position: absolute;  top: 50%;  margin-top: -15px; width: 64px; height: 64px;
+    text-align: center; background: #4E443C; color: #fff;     border-radius: 50%;}
+	
+.jcarousel3-control-prev, .jcarousel3-control-next { font-size:40px; background: transparent;    border: none;}	
+.jcarousel3-control-prev, .jcarousel3-control-next i{ color:#000;}
+
+.jcarousel3-control-prev {     left: -58px;}
+.jcarousel3-control-next {     right: -55px}
+
+.jcarousel3-control-next i { padding-right:50px;}
+
+
+/* ===========   jcarousel3 End  ===========  */
+/* ===========   jcarousel4 start  ===========  */
+
+
+.jcarousel4 { position: relative;  overflow: hidden;  width: 100%;}
+
+.jcarousel4 ul { /* width: 20000em;*/   position: relative;   list-style: none;   margin: 0;   padding: 0;}
+
+.jcarousel4 li {  float: left;   }
+
+
+.jcarousel4 img { display: block; max-width: 100%;  height: auto !important;}
+.jcarousel4-control-prev, .jcarousel4-control-next { position: absolute;  top: 50%;  margin-top: -15px; width: 64px; height: 64px;
+    text-align: center; background: #4E443C; color: #fff;     border-radius: 50%;}
+	
+.jcarousel4-control-prev, .jcarousel4-control-next { font-size:40px; background: transparent;    border: none;}	
+.jcarousel4-control-prev, .jcarousel4-control-next i{ color:#999999;}
+
+.jcarousel4-control-prev {     left: 0px;}
+.jcarousel4-control-next {     right: 0px}
+
+.jcarousel4-control-next i { padding-right:0px;}
+
+/* ===========   jcarousel4 end  ===========  */
+
+/* ===========   jcarousel5 START  ===========  */
+.jcarousel5 { position: relative;  overflow: hidden;  width: 100%; margin:0 auto;}
+
+.jcarousel5 ul {  width: 20000em;   position: relative;   list-style: none;   margin: 0;   padding: 0;}
+
+.jcarousel5 li {  float: left;   }
+
+
+.jcarousel5 img { display: block; max-width: 100%;  height: auto !important;}
+
+.jcarousel5-control-prev, .jcarousel5-control-next { position: absolute;  top: 50%;  margin-top: -15px; width: 64px; height: 64px;
+    text-align: center; background: #4E443C; color: #000;     border-radius: 50%;}
+	
+.jcarousel5-control-prev, .jcarousel5-control-next { font-size:12px; background: transparent;    border: none;}	
+.jcarousel5-control-prev, .jcarousel5-control-next i{ color:#999999;}
+
+.jcarousel5-control-prev {     left: 0px;}
+.jcarousel5-control-next {     right: 0px}
+
+/* ===========   jcarousel5 END  ===========  */
+
+
+
+/* ===========   jcarousel5 START  ===========  */
+.jcarousel-selling-products { position: relative;  overflow: hidden;  width: 100%; margin:0 auto;}
+
+.jcarousel-selling-products ul {  width: 20000em;   position: relative;   list-style: none;   margin: 0;   padding: 0;}
+
+.jcarousel-selling-products li {  float: left;   }
+
+
+.jcarousel-selling-products img { display: block; max-width: 100%;  height: auto !important;}
+
+.jcarousel-selling-products-control-prev, .jcarousel-selling-products-control-next { position: absolute;  top: 50%;  margin-top: -15px; width: 64px; height: 64px;
+    text-align: center; background: #4E443C; color: #000;     border-radius: 50%;}
+	
+.jcarousel-selling-products-control-prev, .jcarousel-selling-products-control-next { font-size:12px; background: transparent;    border: none;}	
+.jcarousel-selling-products-control-prev, .jcarousel-selling-products-control-next i{ color:#999999;}
+
+.jcarousel-selling-products-control-prev {     left: 0px;}
+.jcarousel-selling-products-control-next {     right: 0px}
+
+/* ===========   jcarousel5 END  ===========  */
