@@ -4,7 +4,7 @@ define([
 ], function ($) {
     'use strict';
     return function (config) {
-        $('.mtn_banner_slider').slick(
+        $('.sparsh_banner_slider').slick(
             {
                 infinite: true,
                 slidesToShow: 1,

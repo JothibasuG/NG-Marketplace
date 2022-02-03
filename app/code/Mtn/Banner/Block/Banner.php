@@ -136,12 +136,13 @@ class Banner extends \Magento\Framework\View\Element\Template implements
      * @return \Mtn\Banner\Model\ResourceModel\Banner\Collection
      * @throws \Exception
      */
-    public function getBanner()
+    public function getBanner($pageId=0)
     {
         if (!$this->hasData('banner')) {
             $date = $this->timezoneInterface->date()->format('Y-m-d H:i:s');
             $bannerCollection = $this->bannerCollectionFactory->create()->addFilter('is_active', 1)
                 ->addFieldToFilter('store', $this->storeManager->getStore()->getId())
+                ->addFieldToFilter('page_id', $pageId)
                 ->addFieldToFilter('customer', $this->customerSesion->getCustomerGroupId());
             $bannerCollection->getSelect()->group('banner_id');
             $bannerCollection->getSelect()->order(BannerInterface::POSITION, BannerCollection::SORT_ORDER_ASC);

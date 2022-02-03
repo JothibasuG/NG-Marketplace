@@ -1,24 +1,24 @@
-
-<?php if (!empty($block->getBanner())): ?>
-    <?php $styleVar =''; $a=0;
+<?php $bnner = $block->getBanner($block->getPageId());
+if (!empty($bnner)): ?>
+    <?php $styleVar ='';
     if ($block->getConfig('mtn_banner/advance/left_padding') !='') {
         $styleVar .= "padding-left :".$block->getConfig('mtn_banner/advance/left_padding').";";
     }  ?>
       <?php if ($block->getConfig('mtn_banner/advance/right_padding') !='') {
             $styleVar .= "padding-right :".$block->getConfig('mtn_banner/advance/right_padding').";";
       }  ?>
-<div class="mtn_banner" style="<?php echo $styleVar; ?>"  >
+<div class="sparsh_banner" style="<?php echo $styleVar; ?>"  >
     <style>
-        .mtn_banner_slider{
+        .sparsh_banner_slider{
             display: none;
         }
-        .slick-initialized.mtn_banner_slider{
+        .slick-initialized.sparsh_banner_slider{
             display: block;
         }
     </style>
-    <div class="mtn_banner_slider">
-        <?php  foreach ($block->getBanner() as $banner): ?>
-        <div>
+    <div class="sparsh_banner_slider inn44">
+        <?php  foreach ($bnner as $banner): ?>
+        <div class="b-<?php echo $banner->getBannerId()?>">
             <?php if ($banner->getBannerType() == "Video"):?>
                  <div class="video-thumb">
                     <video

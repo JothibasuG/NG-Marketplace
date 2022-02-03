@@ -111,6 +111,38 @@ class Main extends Generic implements TabInterface
         if ($model->getBannerId()) {
             $fieldset->addField('banner_id', 'hidden', ['name' => 'banner_id']);
         }
+        $banneridd = $fieldset->addField(
+            'page_id',
+            'select',
+            [
+                'label' => 'Banner Page',
+                'name' => 'post[page_id]',
+                'required'  => true,
+                'values' =>
+                [
+                    [
+                        'value'    => '',
+                        'label'    => 'Select Page To Show banner',
+                    ],
+                    [
+                        'value' => '0',
+                        'label' => 'Home Page',
+                    ],
+                    [
+                        'value' => '1',
+                        'label' => 'Corporate',
+                    ],
+                    [
+                        'value' => '2',
+                        'label' => 'SME',
+                    ],
+                    [
+                        'value' => '3',
+                        'label' => 'Individual',
+                    ],
+                ],
+            ]
+        );
 
         $bannerType = $fieldset->addField(
             'banner_type',

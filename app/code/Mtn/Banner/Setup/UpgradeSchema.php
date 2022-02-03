@@ -113,6 +113,17 @@ class UpgradeSchema implements UpgradeSchemaInterface
             );
             $setup->getConnection()->createTable($Customertable);
         }
+        if (version_compare($context->getVersion(), '1.3.0') < 0) {
+            $setup->getConnection()->addColumn(
+                $setup->getTable('mtn_banner'),
+                'page_id',
+                [
+                    'type' => Table::TYPE_SMALLINT,
+                    'nullable' => true,
+                    'comment' => 'Banner Page'
+                ]
+            );
+        }
         $setup->endSetup();
     }
 }
