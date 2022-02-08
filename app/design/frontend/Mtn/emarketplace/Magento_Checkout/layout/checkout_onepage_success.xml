@@ -4,7 +4,8 @@
         <css src="Magento_Checkout::css/custom.css"/>
         <css src="Magento_Checkout::css/font-awesome.min.css"/>
         <css src="Magento_Checkout::css/bootstrap.min.css"/>
-        <css src="Magento_Checkout::css/fontawesome-webfont.woff2"/>
+        <css src="Magento_Checkout::css/lineicons.css"/>
+        <css src="Magento_Checkout::css/jcarousel.responsive.css"/>
     </head>
     <body>
         <referenceBlock name="checkout.success" template="Magento_Checkout::checkout/success.phtml"/>
