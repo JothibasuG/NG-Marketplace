@@ -25,25 +25,16 @@
                  data-attribute="cart-products-toolbar-top"><?= $block->getPagerHtml() ?>
             </div>
         <?php endif ?>
-        <table id="shopping-cart-table"
-               class="cart items data table"
-               data-mage-init='{"shoppingCart":{"emptyCartButton": ".action.clear",
-               "updateCartActionContainer": "#update_cart_action_container"}}'>
-            <caption class="table-caption"><?= $block->escapeHtml(__('Shopping Cart Items')) ?></caption>
-            <div class="row"> 
-        	<div class="col-md-12"> <div class="hd-pmt-dt font-17 font-wg500 mb-3"> Your order summary </div> </div>        
-        </div>
-            <thead>
-                <tr>
-                    <th class="col item" scope="col"><span><?= $block->escapeHtml(__('Item')) ?></span></th>
-                    <th class="col price" scope="col"> </th>
-                    <th class="col qty" scope="col"></th>
-                    <th class="col subtotal" scope="col"></th>
-                </tr>
-            </thead>
-            <?php foreach ($block->getItems() as $_item): ?>
-                <?= $block->getItemHtml($_item) ?>
-            <?php endforeach ?>
+            <div class="cart item">
+                <div class="item-info">
+                    <div class="cart-box wh-box">
+                        <div class="cart-hd font-17 font-wg500 black-color pb-3 mb-3"> Cart  (1 items) </div>
+                        <?php foreach ($block->getItems() as $_item): ?>
+                            <?= $block->getItemHtml($_item) ?>
+                        <?php endforeach ?>
+                    </div>
+                </div>
+            </div>
         </table>
         <?php if ($block->getPagerHtml()): ?>
             <div class="cart-products-toolbar cart-products-toolbar-bottom toolbar"

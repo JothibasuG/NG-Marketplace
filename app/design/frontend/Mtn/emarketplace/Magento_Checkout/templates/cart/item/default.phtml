@@ -9,7 +9,6 @@
 
 /** @var $block \Magento\Checkout\Block\Cart\Item\Renderer */
 
-
 $_item = $block->getItem();
 $product = $_item->getProduct();
 $isVisibleProduct = $product->isVisibleInSiteVisibility();
@@ -17,147 +16,47 @@ $isVisibleProduct = $product->isVisibleInSiteVisibility();
 $helper = $this->helper(Magento\Msrp\Helper\Data::class);
 $canApplyMsrp = $helper->isShowBeforeOrderConfirm($product) && $helper->isMinimalPriceLessMsrp($product);
 ?>
-<tbody class="cart item">
-    <tr class="item-info">
-        <td data-th="<?= $block->escapeHtml(__('Item')) ?>" class="col item">            
 
-        <div class="cart-box wh-box">
-                    	<div class="cart-hd font-17 font-wg500 black-color pb-3 mb-3"> Cart  (1 items) </div>
-                        <div class="cart-item">
-                        
-                        
-                        
-                        <div class="row cart-b mt-2">
-                        <div class="col-md-8 cart-b-left"> 
-                        	<div class="data-block-cart voics-sms"> 
-                            	<ul>
-                                <li>
-                   <span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/unlimited.png') ?>' border="0" alt=""></span> Data <span class="data-lim">1.5GB</span> 
-                    
-                    </li>
-                    <li> <div class="line-b"> </div> </li>
-                    <li>
-                   <span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/validity-icon.png') ?>' border="0" alt=""></span> Validity <span class="data-lim">7days</span> 
-                    
-                    </li>
-                    
-                    <li> <div class="line-b"> </div> </li>
-                    <li>
-                   <span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/icons-contact-us.png') ?>' border="0" alt="" draggable="false" style="user-select: none;"></span> Voice tariff <span class="data-lim">₦11.26k/s</span> 
-                    
-                    </li>
-                    <li> <div class="line-b"> </div> </li>
-                    
-                    <li>
-                   <span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/icons-news.png') ?>'  border="0" alt="" draggable="false" style="user-select: none;"></span> SMS <span class="data-lim">₦4/SMS</span> 
-                    
-                    </li>
-                   
-                    
-                    </ul>
+                <div class="cart-item">
+                    <div class="cart-pro-name">
+                        <div class="cart-p font-15 font-wg500">  <?= $block->escapeHtml($block->getProductName()) ?> <span class="c-p-d font-13 font-wg300"> Data + Business Tips </span> </div>
+                            <div class="cart-icon"> 
+                                <a href="#" class="share-icon-cart"><i class="lni lni-share-alt-1"></i></a>
+                                 <a href="#" class="heart-icon-cart"><i class="lni lni-heart-filled"></i> </a> 
                             </div>
-                            
-                            <div class="reg-oth"> 
-                            
-                            <a href="#" class="plus-block font-13 black-color"> <span class="reg-icon"> <i class="fa fa-plus" aria-hidden="true"></i> </span> Recharge for others </a>
-                            
-                            </div>
-                            
-                            <div class="del-oth-b pt-3"> <a href="#" class="font-13 font-wg500"> Delete </a> </div>
-                            
-                            
                         </div>
-                        <div class="col-md-4 cart-b-right"> 
+                        <div class="row cart-b mt-2">
+                            <div class="col-md-8 cart-b-left"> 
+                                <div class="data-block-cart voics-sms"> 
+                                    <ul>
+                                        <li><span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/unlimited.png') ?>' border="0" alt=""></span> Data <span class="data-lim">1.5GB</span></li>
+                                        <li> <div class="line-b"> </div> </li>
+                                        <li><span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/validity-icon.png') ?>' border="0" alt=""></span> Validity <span class="data-lim">7days</span></li>
+                                        <li> <div class="line-b"> </div> </li>
+                                        <li><span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/icons-contact-us.png') ?>' border="0" alt="" draggable="false" style="user-select: none;"></span> Voice tariff <span class="data-lim">₦11.26k/s</span></li>
+                                        <li> <div class="line-b"> </div> </li>
+                                        <li><span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/icons-news.png') ?>'  border="0" alt="" draggable="false" style="user-select: none;"></span> Price <span class="data-lim"><?= $block->getUnitPriceHtml($_item) ?></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 cart-b-right"> 
                         	<div class="font-15 font-wg500 black-color"> Buying bundle for </div>
                             <div class="number-m">
                             	<div class="name-u"> U </div>
-                                <div class="unknown-u font-13 black-color"> Unknown <span class="ten-mob font-13"> 0810 234 6775</span> </div>
-                                <div class="del-i-block"> <a href="#"> <i class="fa fa-trash-o" aria-hidden="true"></i> </a> </div>
+                                <div class="unknown-u font-13 black-color"> Unknown <span class="ten-mob font-13">
                                 
-                            </div>
-                        </div>
-                        
-                        
-                        </div>
-                        
-                        </div>
-                    
-                    </div>
-                    <!-- end -->
-            <div class="product-item-details">
-
-            <div class="cart-pro-name"> 
-                        
-                        		<div class="cart-p font-15 font-wg500">  
-                   
-                        <?= $block->escapeHtml($block->getProductName()) ?>
-               
-               
-                                <span class="c-p-d font-13 font-wg300"> Data + Business Tips </span> </div>
-                                <div class="cart-icon"> <a href="#" class="share-icon-cart"><i class="lni lni-share-alt-1"></i></a> <a href="#" class="heart-icon-cart"> 
-                                 <i class="lni lni-heart-filled"></i> </a>  </div>
-                        
-                        </div>
-
-               
-                <?php if ($_options = $block->getOptionList()) :?>
-                    <dl class="item-options">
-                        <?php foreach ($_options as $_option) :?>
-                            <?php $_formatedOptionValue = $block->getFormatedOptionValue($_option) ?>
-                            <dt><?= $block->escapeHtml($_option['label']) ?></dt>
-                            <dd>
-                                <?php if (isset($_formatedOptionValue['full_view'])) :?>
-                                    <?= $block->escapeHtml($_formatedOptionValue['full_view']) ?>
-                                <?php else :?>
-                                    <?= $block->escapeHtml($_formatedOptionValue['value'], ['span', 'a']) ?>
-                                <?php endif; ?>
-                            </dd>
+                                <?php if ($_options = $block->getOptionList()) :?>    
+                                    <dl class="item-options">
+                                    <?php foreach ($_options as $_option) :?>
+                                        <?php $_formatedOptionValue = $block->getFormatedOptionValue($_option) ?>
+                                        <dt><?= $block->escapeHtml(ucwords($_option['label'])) ?></dt>
+                                        <dd><?= $block->escapeHtml($_formatedOptionValue['value'], ['span', 'a']) ?> </dd>
                         <?php endforeach; ?>
                     </dl>
-                <?php endif;?>
-                <?php if ($messages = $block->getMessages()) :?>
-                    <?php foreach ($messages as $message) :?>
-                        <div class= "cart item message <?= $block->escapeHtmlAttr($message['type']) ?>">
-                            <div><?= $block->escapeHtml($message['text']) ?></div>
+                    <?php endif;?>
+                            </span> </div>
+                                <div class="del-i-block"> <a href="#"> <i class="fa fa-trash-o" aria-hidden="true"></i> </a> </div>
+                            </div>
                         </div>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-                <?php $addInfoBlock = $block->getProductAdditionalInformationBlock(); ?>
-                <?php if ($addInfoBlock) :?>
-                    <?= $addInfoBlock->setItem($_item)->toHtml() ?>
-                <?php endif;?>
-            </div>
-        </td>
-
-        <?php if ($canApplyMsrp) :?>
-            <td class="col msrp" data-th="<?= $block->escapeHtml(__('Price')) ?>">
-                <span class="pricing msrp">
-                    <span class="msrp notice"><?= $block->escapeHtml(__('See price before order confirmation.')) ?></span>
-                    <?php $helpLinkId = 'cart-msrp-help-' . $_item->getId(); ?>
-                    <a href="#" class="action help map"
-                       id="<?= ($block->escapeHtmlAttr($helpLinkId)) ?>"
-                       data-mage-init='{"addToCart":{
-                                            "helpLinkId": "#<?= $block->escapeJs($block->escapeHtml($helpLinkId)) ?>",
-                                            "productName": "<?= $block->escapeJs($block->escapeHtml($product->getName())) ?>",
-                                            "showAddToCart": false
-                                            }
-                                        }'
-                    >
-                        <span><?= $block->escapeHtml(__("What's this?")) ?></span>
-                    </a>
-                </span>
-            </td>
-        <?php else :?>
-            <td class="col price" data-th="<?= $block->escapeHtml(__('Price')) ?>">
-                <?= $block->getUnitPriceHtml($_item) ?>
-            </td>
-        <?php endif; ?>
-    </tr>
-    <tr class="item-actions">
-        <td colspan="4">
-            <div class="actions-toolbar">
-                <?= /* @noEscape */ $block->getActions($_item) ?>
-            </div>
-        </td>
-    </tr>
-</tbody>
+                        </div>
+                        <div class="actions-toolbar"><?= /* @noEscape */ $block->getActions($_item) ?></div>
