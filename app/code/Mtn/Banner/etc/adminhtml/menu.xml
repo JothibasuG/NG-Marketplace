@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mtn_Banner::elements" title="Mtn Banners" module="Mtn_Banner" resource="Mtn_Banner::manage_banners" sortOrder="50"/>
+        <add id="Mtn_Banner::banner" title="Manage Banners" module="Mtn_Banner" resource="Mtn_Banner::manage_banners" parent="Mtn_Banner::elements" sortOrder="1" action="banner/banner/" />
+        <add id="Mtn_Banner::configuration" title="Configuration" module="Mtn_Banner" resource="Mtn_Banner::config_banner" parent="Mtn_Banner::elements" sortOrder="2" action="admin/system_config/edit/section/mtn_banner/"/>
+    </menu>
+</config>

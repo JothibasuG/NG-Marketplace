@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<head>
+        <!--<css src="Magento_Theme::css/footer.css"/>-->
+        <css src="Magento_Theme::css/bootstrap.min.css" />
+        <css src="Magento_Theme::css/jcarousel.responsive.css"/>
+ 
+ 
+        <css src="Magento_Theme::css/custom.css" />
+        <css src="Magento_Theme::css/lineicons.css" />
+        
+        <!--<link src="Magento_Theme::Magento_Theme::js/extension.js"/>-->
+        <!--<link src="Magento_Theme::js/jquery-3.4.1.min.js"/>-->
+
+    <!-- Bootstrap js -->
+    <!-- popper.min.js should be above bootstrap.min.js -->
+
+       <!--<link src="Magento_Theme::js/popper.min.js"/>-->
+       <!--<link src="Magento_Theme::js/bootstrap.js"/>-->
+    <!--<link src="Magento_Theme::js/bootstrap.min.js"/>-->
+<!--    <link src="Magento_Theme::js/jquery.jcarousel.min.js"/>
+      <link src="Magento_Theme::js/jquery.jcarousel-swipe.js"/>
+     <link src="Magento_Theme::js/jcarousel.responsive.js"/>-->
+     <!--<link src="Magento_Theme::js/tab.js"/>-->
+
+      <!--<link src="Magento_Theme::js/custom.js"/>-->
+    </head>
+    <referenceBlock name="header.links" remove="true" />
+    <referenceContainer name="footer">
+            <referenceBlock name="footer_links" remove="true" />
+            <block class="Magento\Framework\View\Element\Template" name="footer.navigation.menu" before="-" template="Mtn_Homepage::footer_menu.phtml"/>
+        </referenceContainer>
+    
+</page>

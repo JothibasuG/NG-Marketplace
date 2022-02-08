@@ -1,0 +1,92 @@
+
+<div class="container">
+<div class="layout--tabs">
+<div class="tab-part-block">
+<?php $helper = $this->helper('Magiccart\Magicmenu\Helper\Data');?>
+    
+<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('corporate-page-tabs-heading')->toHtml();?>
+    
+
+        <div class="tab-content">
+
+          <div id="block-simple-text-<?php echo $block->getTabId();?>" class="tab-pane">
+      <div class="row">
+      <div class="col-md-12">
+              <div class="inner-block-tab">
+                <h2 class="mtn-c wh-color"> <?php echo $block->getCategoryName();?> </h2>
+                <p>
+                <?php echo $block->getCategoryDescription();?>
+                </p>
+              </div>
+      		
+       </div>             
+
+         </div>
+        <div class="row">
+        <?php for($i=1;$i<=3;$i++){?>  
+         <?php $pro = $helper->getLoadProduct(2);?>
+        	<div class="col-md-4"> 
+            	<div class="tab-box">
+              
+                
+                <div class="tab-box-top">
+                	<div class="tab-hd"> <?php echo $pro->getProductName();?></div>
+                    
+                    <div class="voics-sms">
+                    <ul>
+                    <li>
+                   <span class="img-icon-tab"><img src="images/icons-contact-us.png" border="0" alt="" draggable="false" style="user-select: none;"></span> Voice tariff <span class="data-lim">₦<?php echo $pro->getPrice();?></span> 
+                    
+                    </li>
+                    <li> <div class="line-b"> </div> </li>
+                    
+                    <li>
+                   <span class="img-icon-tab"><img src="images/icons-news.png" border="0" alt="" draggable="false" style="user-select: none;"></span> SMS <span class="data-lim">₦4/SMS</span> 
+                    
+                    </li>
+                    <li> <div class="line-b"> </div> </li>
+                    <li>
+                   <span class="img-icon-tab"><img src="images/mtn-price.png" border="0" alt="" draggable="false" style="user-select: none;"></span> Price <span class="data-lim">₦<?php echo $pro->getPrice();?></span> 
+                    
+                    </li>
+                    </ul>
+                    </div>
+                    
+                    <div class="des-block">
+                    <div class="des-hd"> Description </div>
+                    <p>
+                    A tailored corporate mobile voice solutions that offer cost savings
+                    </p>
+                    </div>
+                    
+                    <div class="des-block2">
+                        <div class="des-hd"> Daily access fee </div>
+                  			<p> No </p>
+                    
+                    </div>
+                
+                </div>
+                
+                <div class="tab-btm-wrapper">
+                <a href="#">Migrate now </a>
+                </div>
+                
+                </div>
+            
+            </div>
+          
+        
+        <?php }?>
+        </div>
+          </div>
+        </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
