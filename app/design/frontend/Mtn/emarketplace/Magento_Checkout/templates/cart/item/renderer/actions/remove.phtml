@@ -1,0 +1,18 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer\Actions\Remove */
+?>
+<div class="del-oth-b pt-3">
+<a href="#"
+   title="<?= $block->escapeHtml(__('Remove')) ?>"
+   class="action action-delete mtncart-action-delete font-13 font-wg500"
+   data-post='<?= /* @noEscape */ $block->getDeletePostJson() ?>'>
+    <span>
+        <?= $block->escapeHtml(__('Delete')) ?>
+    </span>
+</a>
+ </div>

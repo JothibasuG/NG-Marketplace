@@ -1,0 +1,18 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer\Actions\Edit */
+?>
+
+<?php if ($block->isProductVisibleInSiteVisibility()) :?>
+<div class="reg-oth">
+    <a class="action action-edit mtncart-action-edit plus-block font-13 black-color"
+       href="<?= $block->escapeUrl($block->getConfigureUrl()) ?>"
+       title="<?= $block->escapeHtmlAttr(__('Edit item parameters')) ?>">
+        <span  class="reg-icon"> <i class="fa fa-plus" aria-hidden="true"></i> </span><?= $block->escapeHtml(__('Recharge for others')) ?>
+    </a>
+</div>
+<?php endif ?>

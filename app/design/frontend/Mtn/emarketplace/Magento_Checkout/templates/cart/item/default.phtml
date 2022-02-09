@@ -1,0 +1,62 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate
+// phpcs:disable Magento2.Files.LineLength.MaxExceeded
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer */
+
+$_item = $block->getItem();
+$product = $_item->getProduct();
+$isVisibleProduct = $product->isVisibleInSiteVisibility();
+/** @var \Magento\Msrp\Helper\Data $helper */
+$helper = $this->helper(Magento\Msrp\Helper\Data::class);
+$canApplyMsrp = $helper->isShowBeforeOrderConfirm($product) && $helper->isMinimalPriceLessMsrp($product);
+?>
+
+                <div class="cart-item">
+                    <div class="cart-pro-name">
+                        <div class="cart-p font-15 font-wg500">  <?= $block->escapeHtml($block->getProductName()) ?> <span class="c-p-d font-13 font-wg300"> Data + Business Tips </span> </div>
+                            <div class="cart-icon"> 
+                                <a href="#" class="share-icon-cart"><i class="lni lni-share-alt-1"></i></a>
+                                 <a href="#" class="heart-icon-cart"><i class="lni lni-heart-filled"></i> </a> 
+                            </div>
+                        </div>
+                        <div class="row cart-b mt-2">
+                            <div class="col-md-8 cart-b-left"> 
+                                <div class="data-block-cart voics-sms"> 
+                                    <ul>
+                                        <li><span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/unlimited.png') ?>' border="0" alt=""></span> Data <span class="data-lim">1.5GB</span></li>
+                                        <li> <div class="line-b"> </div> </li>
+                                        <li><span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/validity-icon.png') ?>' border="0" alt=""></span> Validity <span class="data-lim">7days</span></li>
+                                        <li> <div class="line-b"> </div> </li>
+                                        <li><span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/icons-contact-us.png') ?>' border="0" alt="" draggable="false" style="user-select: none;"></span> Voice tariff <span class="data-lim">₦11.26k/s</span></li>
+                                        <li> <div class="line-b"> </div> </li>
+                                        <li><span class="img-icon-tab"><img src= '<?= $this->getViewFileUrl('Magento_Checkout::images/icons-news.png') ?>'  border="0" alt="" draggable="false" style="user-select: none;"></span> Price <span class="data-lim"><?= $block->getUnitPriceHtml($_item) ?></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 cart-b-right"> 
+                        	<div class="font-15 font-wg500 black-color"> Buying bundle for </div>
+                            <div class="number-m">
+                            	<div class="name-u"> U </div>
+                                <div class="unknown-u font-13 black-color"> Unknown <span class="ten-mob font-13">
+                                
+                                <?php if ($_options = $block->getOptionList()) :?>    
+                                    <dl class="item-options">
+                                    <?php foreach ($_options as $_option) :?>
+                                        <?php $_formatedOptionValue = $block->getFormatedOptionValue($_option) ?>
+                                        <dt><?= $block->escapeHtml(ucwords($_option['label'])) ?></dt>
+                                        <dd><?= $block->escapeHtml($_formatedOptionValue['value'], ['span', 'a']) ?> </dd>
+                        <?php endforeach; ?>
+                    </dl>
+                    <?php endif;?>
+                            </span> </div>
+                                <div class="del-i-block"> <a href="#"> <i class="fa fa-trash-o" aria-hidden="true"></i> </a> </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="actions-toolbar"><?= /* @noEscape */ $block->getActions($_item) ?></div>
