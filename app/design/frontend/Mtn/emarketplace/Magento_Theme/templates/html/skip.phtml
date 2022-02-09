@@ -14,31 +14,5 @@ $label = $block->getLabel();
     </span>
 </a>
 <div class="header-top"> 
-    <div class="container">
-    	<div class="row">
-            <div class="col-md-6 col-sm-6"> 
-            	<div class="mtn-store">
-                	<ul>
-                    	<li> <a href="#"> <span> <img src="images/icons-storelocator.png" alt="" border="0"> </span> Store locator </a> </li>
-                        <li> <a href="#"> <span> <img src="images/noun-network-tower-1271836.png" alt="" border="0"> </span> Check network status </a> </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6"> 
-            	<div class="mtn-store mtn-store-right-block">
-                	<ul>
-                    	<li> <a href="#"> Why MTN? </a> </li>
-                        <li> <a href="#"> Foundation </a> </li>
-                        <li> <a href="#"> Careers </a> </li>
-                         <li> <a href="#"> Investors </a> </li>
-                         <li> <a href="#"> <img src="images/noun-moon-1780157.png" alt="" border="0"> </a> </li>
-                    </ul>
-                </div>
-            
-            </div>
-    	</div>
-    
-    
-    </div>
-
+    <?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header-links')->toHtml();;?>
 </div>

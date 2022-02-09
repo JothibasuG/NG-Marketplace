@@ -35,7 +35,7 @@
             <referenceBlock name="footer_links" remove="true" />
             <block class="Magento\Framework\View\Element\Template" name="footer.navigation.menu" before="-" template="Mtn_Homepage::footer_menu.phtml"/>
         </referenceContainer>
-        <move element="header.links" destination="header-wrapper"/>
+        <move element="header.links" destination="header-wrapper" before="minicart"/>
     </body>
     
 </page>
