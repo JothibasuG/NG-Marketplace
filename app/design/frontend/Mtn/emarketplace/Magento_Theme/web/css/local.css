@@ -1,8 +1,0 @@
-@media (min-width: 768px) {
-.page-main {max-width: 100%; padding-left: 0; padding-right: 0;}
-}
-
-.sparsh_banner_slider .slick-slide .image-thumb {float: right;}
-.sparsh_banner_slider .slick-slide img {width: auto;}
-.sparsh_banner_slider .slick-arrow.slick-prev:after{display:none}
-.page-footer { background: #000 !important;}
