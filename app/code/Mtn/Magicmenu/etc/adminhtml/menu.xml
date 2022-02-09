@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Mtn 
+ * @category    Mtn 
+ * @copyright   Copyright (c) 2014 Mtn (http://www.mtn.net/) 
+ * @license     http://www.mtn.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2016-02-23 18:59:34
+ * @@Modify Date: 2016-04-22 17:17:18
+ * @@Function:
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<update id="mtn" title="Mtn" module="Mtn_Magicmenu" sortOrder="10" resource="Mtn_Magicmenu::mtn"/>
+
+	        <add id="Mtn_Magicmenu::magicmenu" title="Magic Menu" module="Mtn_Magicmenu" sortOrder="10" parent="mtn" resource="Mtn_Magicmenu::magicmenu"/>
+
+				<add id="Mtn_Magicmenu::magicmenu_menu" title="Menu" module="Mtn_Magicmenu" sortOrder="10" parent="Mtn_Magicmenu::magicmenu" action="magicmenu/menu" resource="Mtn_Magicmenu::magicmenu_menu"/>
+
+				<add id="Mtn_Magicmenu::magicmenu_extra" title="Extra Menu" module="Mtn_Magicmenu" sortOrder="10" parent="Mtn_Magicmenu::magicmenu" action="magicmenu/extra" resource="Mtn_Magicmenu::magicmenu_extra"/>
+    </menu>
+</config>
