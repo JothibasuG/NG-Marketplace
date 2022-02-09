@@ -1,7 +1,7 @@
 var config = {
 	map: {
 		'*': {
-			'magicmenu': "Magiccart_Magicmenu/js/magicmenu",
+			'magicmenu': "Mtn_Magicmenu/js/magicmenu",
 		},
 	},
 
