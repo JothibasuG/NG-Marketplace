@@ -5,4 +5,4 @@
 .sparsh_banner_slider .slick-slide .image-thumb {float: right;}
 .sparsh_banner_slider .slick-slide img {width: auto;}
 .sparsh_banner_slider .slick-arrow.slick-prev:after{display:none}
-.page-footer { background: #000;}
+.page-footer { background: #000 !important;}
