@@ -1,4 +1,4 @@
-
+requirejs(['jquery','jcarouseljs','jcarouselswipe'], function(jQuery){
 jQuery(document).ready(function(){
 	
    (function($) {
@@ -343,5 +343,6 @@ jQuery(document).ready(function(){
 	
 	
 })(jQuery);
+  }); 
   }); 
   

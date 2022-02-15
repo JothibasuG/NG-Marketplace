@@ -1,4 +1,5 @@
-(function($) {
+requirejs(['jquery'], function(jQuery){
+    (function($) {
     "use strict";
     $(window).on('load', function(event) {
         $('#preloader').delay(500).fadeOut(500);
@@ -98,6 +99,7 @@ countryDropdown('#country');
 
 	
 }(jQuery));
+}); 
 
 
 
