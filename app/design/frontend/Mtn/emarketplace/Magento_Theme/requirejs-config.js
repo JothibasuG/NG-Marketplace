@@ -4,7 +4,6 @@ var config = {
   
   deps: [
     "Magento_Theme/js/jcarousel.responsive",
-    "Magento_Theme/js/tab",
     'custom-js'
   ],
   paths: {
