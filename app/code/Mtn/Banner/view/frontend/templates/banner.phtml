@@ -47,7 +47,7 @@ if (!empty($bnner)): ?>
                 </div>
             <?php endif;?>
             <?php if ($banner->getBannerType() == "Image"):?>
-                <?php if ($banner->getLabelButtonText() == "" && $banner->getCallToAction() != ""): ?><a href="<?= $block->escapeHtml(($banner->getCallToAction()?$banner->getCallToAction():'#')) ?>" class="btn btn-md btn-banner" target="_blank"><?php endif;?>
+                <?php if ($banner->getLabelButtonText() == "" && $banner->getCallToAction() != ""): ?><a href="<?= $block->escapeHtml(($banner->getCallToAction()?$banner->getCallToAction():'#')) ?>" class="btn mtn-btn-link-more mt-5" target="_blank"><?php endif;?>
                 <div class="image-thumb">
                     <img src="<?= $block->escapeHtml($block->getMediaPath().$banner->getBannerImage()) ?>" alt="<?= /* @noEscape */ ($banner->getBannerTitle()?$banner->getBannerTitle():"Mtn Banner");?>">
                 </div>
@@ -65,7 +65,7 @@ if (!empty($bnner)): ?>
                         </div>
                         <?php if ($banner->getLabelButtonText() != ""): ?>
                         <div class="container">
-                            <a href="<?= $block->escapeHtml(($banner->getCallToAction()?$banner->getCallToAction():'#')) ?>" class="btn btn-md btn-banner" target="_blank">
+                            <a href="<?= $block->escapeHtml(($banner->getCallToAction()?$banner->getCallToAction():'#')) ?>" class="btn mtn-btn-link-more mt-5" target="_blank">
                                 <?= $block->escapeHtml($banner->getLabelButtonText()) ?>
                             </a>
                         </div>
