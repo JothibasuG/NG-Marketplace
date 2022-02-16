@@ -119,23 +119,23 @@ require(['jquery'], function($){
                             });
                         }
                     });
-                    $(window).scroll(function () {
-                        var postion = $(this).scrollTop();
-                        $(this).trigger('magicmenu:refresh');
-                        if (postion > postionTop ){ /* not use = */
-                            menuSticky.addClass('header-container-fixed');
-                            if(heightItem && !menuAIO.hasClass('over')){
-                                heightAIO = heightItem - (postion - postionTop) - menuHeight;
-                                if(heightAIO > 0 ) menuAIO.css({"height": heightAIO, "overflow": "hidden", "display": ''});
-                                else menuAIO.css({"height": 'auto', "display": 'none', "overflow": "" });
-                            } else {
-                                menuAIO.css({"height": 'auto', "display": '', "overflow": "" });
-                            }
-                        } else {
-                            menuSticky.removeClass('header-container-fixed');
-                            menuAIO.css({"height": 'auto'});
-                        }
-                    });
+//                    $(window).scroll(function () {
+//                        var postion = $(this).scrollTop();
+//                        $(this).trigger('magicmenu:refresh');
+//                        if (postion > postionTop ){ /* not use = */
+//                            menuSticky.addClass('header-container-fixed');
+//                            if(heightItem && !menuAIO.hasClass('over')){
+//                                heightAIO = heightItem - (postion - postionTop) - menuHeight;
+//                                if(heightAIO > 0 ) menuAIO.css({"height": heightAIO, "overflow": "hidden", "display": ''});
+//                                else menuAIO.css({"height": 'auto', "display": 'none', "overflow": "" });
+//                            } else {
+//                                menuAIO.css({"height": 'auto', "display": '', "overflow": "" });
+//                            }
+//                        } else {
+//                            menuSticky.removeClass('header-container-fixed');
+//                            menuAIO.css({"height": 'auto'});
+//                        }
+//                    });
                 },
 
                 initMenu: function($navtop, fullWidth, horizontal=true){
