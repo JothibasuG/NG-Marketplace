@@ -38,6 +38,9 @@
             <block class="Magento\Framework\View\Element\Template" name="footer.navigation.menu" before="-" template="Mtn_Homepage::footer_menu.phtml"/>
         </referenceContainer>
         <move element="header.links" destination="header-wrapper" before="minicart"/>
+        <referenceContainer name="page.wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="header.menus" before="-" template="Magento_Theme::header_menu.phtml"/>
+        </referenceContainer>
     </body>
     
 </page>

@@ -139,6 +139,9 @@ require(['jquery'], function($){
                 },
 
                 initMenu: function($navtop, fullWidth, horizontal=true){
+                    console.log(fullWidth);
+                    console.log(horizontal);
+                    console.log("in init");
                     $navtop.each(function(index, val) {
                         var $item     = $(this);
                         if(fullWidth){
