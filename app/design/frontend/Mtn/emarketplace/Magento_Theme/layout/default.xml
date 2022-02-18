@@ -13,7 +13,7 @@
  
         <css src="Magento_Theme::css/lineicons.css" />
         
-        <css src="Magento_Theme::css/mtn-magento.css" />
+        <css src="Magento_Theme::css/mtn-magento.css"  media="all and (min-width: 1px)"/>
 
         <css src="Magento_Theme::css/custom.css" media="all and (min-width: 1px)"/>
         
