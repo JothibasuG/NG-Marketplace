@@ -134,10 +134,10 @@ jQuery(document).ready(function(){
             })
             .jcarousel({
                 wrap: 'circular'
-            })
-			 .jcarouselSwipe({
-                perSwipe: 1
             });
+//			 .jcarouselSwipe({
+//                perSwipe: 1
+//            });
 
         $('.jcarousel3-control-prev')
             .jcarouselControl({
