@@ -16,7 +16,7 @@ if (!empty($bnner)): ?>
             display: block;
         }
     </style>
-    <div class="sparsh_banner_slider inn44">
+    <div class="sparsh_banner_slider container inn44">
         <?php  foreach ($bnner as $banner): ?>
         <div class="b-<?php echo $banner->getBannerId()?>">
             <?php if ($banner->getBannerType() == "Video"):?>
