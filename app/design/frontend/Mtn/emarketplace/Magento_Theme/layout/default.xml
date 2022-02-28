@@ -35,7 +35,7 @@
         </referenceBlock>-->
     <referenceContainer name="footer">
             <referenceBlock name="footer_links" remove="true" />
-            <referenceBlock name="subscribe" remove="true" />
+            <referenceBlock name="form.subscribe" remove="true" />
             <block class="Magento\Framework\View\Element\Template" name="footer.navigation.menu" before="-" template="Mtn_Homepage::footer_menu.phtml"/>
         </referenceContainer>
         <move element="header.links" destination="header-wrapper" before="minicart"/>
